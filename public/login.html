@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog  </title>
+
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/editor.css">
+    <link rel="stylesheet" href="css/blog.css">
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <img src="img/logo.png" class="logo" alt="">
+        <ul class="links-container">
+            <li class="link-item"><a href="/" class="link">home</a></li>
+            <li class="link-item"><a href="/editor" class="link">editor</a></li>
+            <li class="link-item"><a href="/Contact" class="link">Contact me</a></li>
+            <li class="link-item"><a href="/login" class="link">login</a></li>
+        </ul>
+    </nav>
+    
+  
+
+    <h1 class="sub-heading">login </h1>
+
+    <!-- blog section -->
+    <section class="blogs-section">
+        <div class="blog-card">
+           
+<form action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <img src="img/img2.png" alt="Avatar" class="avatar">
+    </div>
+  
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+          
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+  
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+        </div>
+    </section>
+
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+
+    <script src="js/firebase.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/blog.js"></script>
+    
+</body>
+</html>
