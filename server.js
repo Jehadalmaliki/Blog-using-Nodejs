@@ -29,8 +29,8 @@ app.get('/admin', (req, res) => {
 app.get('/admin?role=admin', (req, res) => {
     res.sendFile(path.join(initial_path, "admin.html"));
 })
-app.get( '/',router);
-app.get( (req, res) => {
+
+app.get('*', (req, res) => {
     res.sendFile(path.join(initial_path, "404.html"));
 })
 
